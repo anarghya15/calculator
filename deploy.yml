@@ -1,7 +1,6 @@
 ---
 - name: Pull Docker Image from Docker Hub
   hosts: localhost
-  remote_user: dell
   become: false
   connection: local
   tasks:
