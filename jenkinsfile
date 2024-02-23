@@ -51,7 +51,7 @@ pipeline {
 	
 	post {
         failure {
-            mail attachLog: true, body: 'This is the extended email test', subject: 'Extended Email Test', to: 'h.anarghya@iiitb.ac.in'
+            mail body: 'This is the extended email test', subject: 'Extended Email Test', to: 'h.anarghya@iiitb.ac.in'
         }
     }
 }
