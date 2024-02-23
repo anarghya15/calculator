@@ -20,7 +20,7 @@ pipeline {
             steps {
                 script {
                     // Build Docker image
-                    docker.buil("${DOCKER_IMAGE_NAME}", '.')
+                    docker.build("${DOCKER_IMAGE_NAME}", '.')
                 }
             }
         }
