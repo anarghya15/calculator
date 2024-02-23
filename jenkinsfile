@@ -51,9 +51,7 @@ pipeline {
 	
 	post {
         failure {
-            emailext subject: "Pipeline Failed: ${currentBuild.fullDisplayName}",
-                     body: "One of the stages in the pipeline has failed. Please investigate.",
-                     to: "h.anarghya@iiitb.ac.in"
+            emailext attachLog: true, body: 'This is the extended email test', subject: 'Extended Email Test', to: 'h.anarghya@iiitb.ac.in'
         }
     }
 }
